@@ -22,6 +22,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     ExamplePageViewController *viewController = [[ExamplePageViewController alloc] initExampleViewController];
     UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:viewController];
+    UINavigationBar *navBar = [navigation navigationBar];
+    [navBar setBarTintColor:[UIColor darkGrayColor]];
+    navBar.translucent = YES;
+    navBar.barStyle = UIBarStyleBlackOpaque;
     
     self.window.rootViewController = navigation;
     

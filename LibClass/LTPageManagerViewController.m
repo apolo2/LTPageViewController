@@ -39,17 +39,19 @@
     [self setupPageViewController];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 - (void) setupSegmentedView {
     if (!self.disibleSegmentView) {
         self.segmentedView = [LTSegmentedView viewWithListTitle:self.segmentTitles];
         self.segmentedView.delegate = self;
-        self.segmentedView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.segmentedView.frame.size.height);
         [self.view addSubview:self.segmentedView];
     }
+    float segmentOriginY = 0;
+    if (self.navigationController) {
+        if ([self.navigationController.navigationBar isTranslucent]) {
+            segmentOriginY = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height;
+        }
+    }
+    self.segmentedView.frame = CGRectMake(0, segmentOriginY, self.view.frame.size.width, self.segmentedView.frame.size.height);
 }
 
 - (void) segmentedView:(LTSegmentedView *)segmentedView didSelectedIndex:(NSInteger)index {
@@ -116,8 +118,9 @@
 #pragma mark - ScrollView (in PageViewController) delegate
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView {
     float scrollingValue = (scrollView.contentOffset.x - scrollView.frame.size.width) / scrollView.frame.size.width;
-    if (!isnan(scrollingValue) && scrollingValue != 0)
+    if (!isnan(scrollingValue) && scrollingValue != 0) {
         [self.segmentedView scrollingFromRemoteWithValue:scrollingValue];
+    }
 }
 
 - (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView {

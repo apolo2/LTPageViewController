@@ -42,22 +42,11 @@
     // Do any additional setup after loading the view.
     
     self.title = @"Home";
-    
-    [self setupNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void) setupNavigationBar {
-    if (self.navigationController) {
-        UINavigationBar *navBar = [self.navigationController navigationBar];
-        [navBar setBarTintColor:[UIColor darkGrayColor]];
-        self.navigationController.navigationBar.translucent = NO;
-        self.navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
-    }
 }
 
 @end

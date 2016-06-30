@@ -176,8 +176,9 @@
                 self.currentScrollingType = ScrollingItemTypeBackgroundView;
         } else {
             if (self.selectedIndex == self.titles.count - 1 ||
-                self.selectedIndex == 1)
+                self.selectedIndex == 1) {
                 self.currentScrollingType = ScrollingItemTypeBackgroundView;
+            }
         }
     }
     
@@ -185,12 +186,14 @@
     if (self.currentScrollingType == ScrollingItemTypeBackgroundView) {
         CGRect frame = self.imgSelectedTab.frame;
         frame.origin.x += (scrollingValue - self.lastScrollingValue)*[self itemWidth];
-        if (frame.origin.x >= 0 && frame.origin.x < self.frame.size.width - frame.size.width)
+        if (frame.origin.x >= 0 && frame.origin.x < self.frame.size.width - frame.size.width) {
             self.imgSelectedTab.frame = frame;
+        }
     } else {
         float xOffset = self.collectionView.contentOffset.x + (scrollingValue - self.lastScrollingValue)*[self itemWidth];
-        if (xOffset >= 0 && xOffset <= self.collectionView.contentSize.width - self.frame.size.width)
+        if (xOffset >= 0 && xOffset <= self.collectionView.contentSize.width - self.frame.size.width) {
             [self.collectionView setContentOffset:CGPointMake(xOffset, self.collectionView.contentOffset.y)];
+        }
     }
     
     //Reset value
