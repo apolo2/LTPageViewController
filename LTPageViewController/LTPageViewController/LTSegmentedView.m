@@ -141,6 +141,7 @@
     [self.collectionView reloadData];
     self.lastScrollingValue = 0;
     self.isScrollingRemote = NO;
+    [self reloadSubViewFrameToCurrentPosition];
 }
 
 - (CGRect) getInViewFrameOfCellAtIndex:(NSInteger)index {

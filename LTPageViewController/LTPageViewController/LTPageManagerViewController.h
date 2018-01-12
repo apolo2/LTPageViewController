@@ -25,4 +25,7 @@
 - (id) initWithListViewController:(NSArray*)viewControllers
                      segmentTitle:(NSArray*)titles;
 
+#pragma mark - Moving
+- (void)moveToPageAtIndex:(NSInteger)index;
+
 @end

@@ -44,6 +44,13 @@
     self.title = @"Home";
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // Example for moving to a page
+    // [self moveToPageAtIndex:3];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -11,15 +11,15 @@
 		84A79F841C97AE8100AC2FA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79F831C97AE8100AC2FA5 /* AppDelegate.m */; };
 		84A79F8C1C97AE8100AC2FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A79F8B1C97AE8100AC2FA5 /* Assets.xcassets */; };
 		84A79F8F1C97AE8100AC2FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A79F8D1C97AE8100AC2FA5 /* LaunchScreen.storyboard */; };
-		84A79F9A1C97AEEE00AC2FA5 /* LTPageManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79F991C97AEEE00AC2FA5 /* LTPageManagerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		84A79F9E1C97AEFE00AC2FA5 /* LTSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79F9C1C97AEFE00AC2FA5 /* LTSegmentedView.m */; settings = {ASSET_TAGS = (); }; };
-		84A79F9F1C97AEFE00AC2FA5 /* LTSegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A79F9D1C97AEFE00AC2FA5 /* LTSegmentedView.xib */; settings = {ASSET_TAGS = (); }; };
-		84A79FAC1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FAA1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		84A79FAD1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A79FAB1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		84A79FB01C97AFE400AC2FA5 /* LTSegmentedCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FAF1C97AFE400AC2FA5 /* LTSegmentedCollectionViewLayout.m */; settings = {ASSET_TAGS = (); }; };
-		84A79FB61C97B47800AC2FA5 /* ExamplePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FB51C97B47800AC2FA5 /* ExamplePageViewController.m */; settings = {ASSET_TAGS = (); }; };
-		84A79FBB1C97B4AA00AC2FA5 /* PageItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FB91C97B4AA00AC2FA5 /* PageItemViewController.m */; settings = {ASSET_TAGS = (); }; };
-		84A79FBC1C97B4AA00AC2FA5 /* PageItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A79FBA1C97B4AA00AC2FA5 /* PageItemViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		84A79F9A1C97AEEE00AC2FA5 /* LTPageManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79F991C97AEEE00AC2FA5 /* LTPageManagerViewController.m */; };
+		84A79F9E1C97AEFE00AC2FA5 /* LTSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79F9C1C97AEFE00AC2FA5 /* LTSegmentedView.m */; };
+		84A79F9F1C97AEFE00AC2FA5 /* LTSegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A79F9D1C97AEFE00AC2FA5 /* LTSegmentedView.xib */; };
+		84A79FAC1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FAA1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.m */; };
+		84A79FAD1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A79FAB1C97AF7700AC2FA5 /* LTSegmentedCollectionViewCell.xib */; };
+		84A79FB01C97AFE400AC2FA5 /* LTSegmentedCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FAF1C97AFE400AC2FA5 /* LTSegmentedCollectionViewLayout.m */; };
+		84A79FB61C97B47800AC2FA5 /* ExamplePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FB51C97B47800AC2FA5 /* ExamplePageViewController.m */; };
+		84A79FBB1C97B4AA00AC2FA5 /* PageItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79FB91C97B4AA00AC2FA5 /* PageItemViewController.m */; };
+		84A79FBC1C97B4AA00AC2FA5 /* PageItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A79FBA1C97B4AA00AC2FA5 /* PageItemViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -283,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

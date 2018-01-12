@@ -88,6 +88,15 @@
     }
 }
 
+#pragma mark - Moving
+- (void)moveToPageAtIndex:(NSInteger)index {
+    if (index >= self.viewControllers.count) {
+        return;
+    }
+    [self segmentedView:self.segmentedView didSelectedIndex:index];
+    [self.segmentedView reloadWithSelectedIndex:index];
+}
+
 #pragma mark - PageViewController
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     NSInteger index = [self.viewControllers indexOfObject:viewController];
